@@ -1,4 +1,4 @@
-# Demo Changes
+![](screenshot.png)
 
 ## Controllers
 - HomeController: index view.
