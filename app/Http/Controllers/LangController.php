@@ -12,7 +12,7 @@ class LangController extends Controller
     public function clear(Request $request)
     {
         foreach (Storage::disk('lang')->allDirectories() as $dir) {
-            Storage::disk('lang')->cleanDirectory($dir);
+            Storage::disk('lang')->deleteDirectory($dir);
         }
 
         return redirect()->route('home');
