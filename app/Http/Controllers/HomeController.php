@@ -16,6 +16,6 @@ class HomeController extends Controller
     {
         return collect(Storage::disk('lang')->allFiles())->filter(function ($filename) {
             return strrpos($filename, '.php');
-        });
+        })->values();
     }
 }
